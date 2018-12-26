@@ -10,14 +10,15 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 420px;
+  width: 375px;
+  background: #F8F8F8;
 }
 
 nav {
   margin: 0 auto;
   padding: 10px 0 15px 15px;
   position: fixed;
-  width: 420px;
+  width: 375px;
   background-color: black;
 }
 
@@ -31,6 +32,224 @@ h3 {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
+}
+
+.iphone-frame {
+  margin: 0 auto;
+  position: fixed;
+  width: 375px;
+  height: 100%;
+  background: white;
+}
+
+.status-bar {
+  margin: 0 auto;
+  padding: 10px 0 15px 15px;
+  position: fixed;
+  width: 375px;
+  background: #F8F8F8;
+}
+
+.signal {
+  position: absolute;
+  left: 1.87%;
+  right: 94.27%;
+  top: 25%;
+  bottom: 27.5%;
+}
+
+.gs-text {
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  left: 22px;
+  bottom: 2.5px;
+  top: calc(50% - 15px/2);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.time {
+  position: absolute;
+  width: 49px;
+  height: 15px;
+  left: calc(50% - 49px/2 + 1px);
+  top: calc(50% - 15px/2);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #030303;
+}
+
+.battery-text {
+  position: absolute;
+  left: 82.67%;
+  right: 8.53%;
+  top: calc(50% - 15px/2);
+  bottom: 12.5%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  color: #030303;
+}
+
+.battery {
+  position: absolute;
+  left: 92.27%;
+  right: 1.2%;
+  top: 10%;
+  bottom: 22.5%;
+}
+
+.navbar {
+  margin: 20px auto;
+  padding: 10px 0 15px 15px;
+  position: fixed;
+  width: 375px;
+  height: 55px;
+  background: #F8F8F8;
+  box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-left {
+  position: absolute;
+  left: 2.76%;
+  right: 88.42%;
+  top: 31.8%;
+  bottom: 26.74%;
+}
+
+.fa-chevron-left {
+  font-size: 24px;
+  color: #007AFF;
+}
+
+.fas {
+  font-size: 24px;
+}
+
+.map-text {
+  position: absolute;
+  left: 9%;
+  right: 66.11%;
+  top: 27%;
+  bottom: 25%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.0241176em;
+  color: #007AFF;
+}
+
+.selected-stop {
+  position: absolute;
+  width: 176px;
+  height: 22px;
+  left: calc(50% - 176px/2 - 1.5px);
+  top: 22%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.0241176em;
+  color: #000000;
+}
+
+.bus-counter {
+  display: inline-block;
+  font-weight: 800;
+}
+
+.incoming-buses {
+  position: absolute;
+  width: 165px;
+  height: 13px;
+  left: 109px;
+  top: 65%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 13px;
+  font-size: 11px;
+  letter-spacing: 0.00636364em;
+  color: #000000;
+}
+
+.bus-list-continer {
+  position: fixed;
+  width: 375px;
+  height: 100%;
+  left: 0px;
+  top: 64px;
+}
+
+.bus-box {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  left: 15px;
+  top: 92px;
+  border-radius: 13px;
+  background: #EFEFF4;
+}
+
+.bus-number {
+  position: absolute;
+  height: 62px;
+  width: 62px;
+  font-family: "San Francisco Display Thin";
+  font-style: normal;
+  line-height: 62px;
+  font-size: 29px;
+  text-align: center;
+  color: #111111;
+}
+
+.destination-marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 101px;
+  top: 111px;
+}
+
+.destination-text {
+  position: absolute;
+width: 144px;
+height: 22px;
+left: 126px;
+top: 113px;
+
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: 22px;
+font-size: 22px;
+letter-spacing: -0.0241176em;
+
+color: #000000;
+}
+
+/* Font faces */
+@font-face {
+  font-family: "San Francisco Display Ultralight";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg#San Francisco Display Ultralight") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Thin";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg")
 }
 
 .restaurant-list {
