@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="myjavascript.js"></script>
 </head>
 
 <body>
@@ -17,39 +18,236 @@
           <img src="https://img.icons8.com/ios/12/000000/high-connection-filled.png">
       </div>
           <div class="gs-text">GS</div>
-          <div class="time">9:41 PM</div>
+          <div class="time" id="currentTime"></div>
           <div class="battery-text">100%</div>
           <div class="battery">
             <img src="https://img.icons8.com/ios/18/000000/empty-battery-filled.png">
       </div>
           </div>
-          <div class="navbar">
-            <div class="arrow-left">
-              <i class="fas fa-chevron-left"></i>
+          <div class="primary-screen">
+            <div class="navbar">
+              <div class="back-button">
+                <div class="arrow-left">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="map-text">
+                  <i class="fas fa-map-marked"></i>
+                </div>
+              </div>
+              <div class="selected-stop">
+                Washington and State
+              </div>
+              <div class="incoming-buses">
+                <div class="bus-counter" id="bus-counter">NA</div> buses arriving at this location
+              </div>
             </div>
-            <div class="map-text">
-              <i class="fas fa-map-marked"></i>
-            </div>
-            <div class="selected-stop">
-              Washington and State
-            </div>
-            <div class="incoming-buses">
-              <div class="bus-counter">7</div> buses arriving at this location
-            </div>
-          </div>
-          <div class="bus-list-container">
-            <div class="bus-box-container">
-              <div class="bus-box">
-                <div class="bus-number">
-                  148X
+            <div class="bus-list-container" id="bus-list-div">
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      60
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text destination-small-text">
+                  Randolph/Harbor Dr
+                </div>
+                <div class="time-text-low" id="listing-1-timer">
+                  NA
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      124
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Navy Pier
+                </div>
+                <div class="time-text" id="listing-2-timer">
+                  NA
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      151
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Devon/Clark
+                </div>
+                <div class="time-text" id="listing-3-timer">
+                  NA
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      J14
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text destination-small-text">
+                  103rd/Stony Island
+                </div>
+                <div class="time-text" id="listing-4-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      148X
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Maple and Oak
+                </div>
+                <div class="time-text" id="listing-5-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      148X
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Maple and Oak
+                </div>
+                <div class="time-text" id="listing-6-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      148X
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Maple and Oak
+                </div>
+                <div class="time-text" id="listing-7-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      148X
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Maple and Oak
+                </div>
+                <div class="time-text" id="listing-8-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
+                </div>
+              </div>
+              <div class="bus-listing">
+                <div class="bus-box-container">
+                  <div class="bus-box">
+                    <div class="bus-number">
+                      148X
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-marker">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="destination-text">
+                  Maple and Oak
+                </div>
+                <div class="time-text" id="listing-9-timer">
+                  7 min
+                </div>
+                <div class="bottom-border">
                 </div>
               </div>
             </div>
-            <div class="destination-marker">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="destination-text">
-            Maple and Oak  
+            <div class="selected-route-container">
+              <div class="bus-box-container">
+                <div class="bus-box popup-box">
+                  <div class="bus-number">
+                    NA
+                  </div>
+                </div>
+              </div>
+              <div class="popup-destination">
+                Bus to Maple and Oak
+              </div>
+              <div class="popup-subtext">
+                Arriving in 7 minutes
+              </div>
+              <div class="close-icon">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="go-button">
+                <div class="go-button-main-text">
+                  Choose Bus
+                </div>
+                <div class="go-button-sub-text">
+                  1.2 miles away
+                </div>
+              </div>
             </div>
           </div>
   </section>
