@@ -452,34 +452,3 @@ h3 {
   font-weight: 400;
   src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg#San Francisco Display Bold") format("svg")
 }
-
-.restaurant-list {
-  padding-top: 50px;
-  background-color: #DBD9DB;
-}
-
-.location {
-  border-bottom-width: thin;
-  border-bottom-color: grey;
-  border-style: solid;
-}
-
-.location:hover {
-  background-color: #ABAAAB;
-}
-
-.content {
-  width: 90%;
-  margin-left: 3%;
-  display: inline-block;
-  height: inherit;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.arrow {
-  width: 3%;
-  height: 43px;
-  vertical-align: middle;
-  display: inline-block;
-}
