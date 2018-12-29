@@ -110,7 +110,7 @@ window.onload = function() {
       startTimer(countdownTime, display);
       window.setInterval(startTimer, countdownTime);
   }
-
+  
 }
 
 //Modal box generator
