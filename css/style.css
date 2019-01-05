@@ -136,6 +136,7 @@ h3 {
 .primary-screen {
   min-height: 667px;
   width: 375px;
+  margin-top: 5px;
   display: inline-block;
 }
 
