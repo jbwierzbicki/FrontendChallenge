@@ -17,7 +17,7 @@ body {
 nav {
   margin: 0 auto;
   padding: 10px 0 15px 15px;
-  position: absolute;
+  position: float;
   width: 375px;
   background-color: black;
 }
@@ -36,142 +36,190 @@ h3 {
 
 .iphone-frame {
   margin: 0 auto;
-  position: absolute;
+  position: float;
   width: 375px;
   background: white;
 }
 
 .status-bar {
   margin: 0 auto;
-  padding: 10px 0 15px 15px;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   top: 0px;
   position: fixed;
-  display: flex;
-  z-index: 2;
+  display: inline-block;
+  height: 20px;
   width: 375px;
   background: #F8F8F8;
 }
 
+.status-left {
+  display: inline-block;
+  height: 16px;
+  width: 24%;
+}
+
+.status-middle {
+  display: inline-block;
+  height: 16px;
+  width: 50%;
+}
+
+.status-right {
+  display: inline-block;
+  height: 16px;
+  width: 24%;
+  text-align: right;
+}
+
 .signal {
-  position: absolute;
-  left: 1.87%;
-  right: 94.27%;
-  top: 25%;
-  bottom: 27.5%;
+  display: inline-block;
+  line-height: 16px;
+  vertical-align: middle;
+
+}
+
+.fa-signal {
+  font-size: 13px !important;
 }
 
 .gs-text {
-  position: absolute;
-  width: 17px;
-  height: 15px;
-  left: 22px;
-  bottom: 2.5px;
-  top: calc(50% - 15px/2);
+  display: inline-block;
+  width: 22px;
+  height: 16px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: normal;
+  line-height: 16px;
   font-size: 12px;
   font-weight: 600;
   color: #000000;
+  vertical-align: middle;
 }
 
 .time {
-  position: absolute;
+  margin: 0 auto;
   width: 49px;
   height: 15px;
   left: calc(50% - 49px/2 + 1px);
   top: calc(50% - 15px/2);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: normal;
+  line-height: 16px;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
   color: #030303;
+  vertical-align: middle;
 }
 
 .battery-text {
-  position: absolute;
-  left: 82.67%;
-  right: 8.53%;
-  top: calc(50% - 15px/2);
-  bottom: 12.5%;
+  display: inline-block;
+  width: 35px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: normal;
+  line-height: 16px;
   font-size: 12px;
   font-weight: 600;
-  text-align: right;
+  vertical-align: middle;
   color: #030303;
 }
 
 .battery {
-  position: absolute;
-  left: 92.27%;
-  right: 1.2%;
-  top: 10%;
-  bottom: 22.5%;
+  line-height: 16px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fa-battery-full {
+  font-size: 16px !important;
 }
 
 .primary-screen {
   min-height: 667px;
+  width: 375px;
+  display: inline-block;
 }
 
-.navbar {
-  margin: 20px auto;
-  padding: 10px 0 15px 15px;
-  position: absolute;
+.navbar-wrapper {
   width: 375px;
-  height: 55px;
+  padding-left: 5px;
+  padding-right: 5px;
   background: #F8F8F8;
   box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+  height: 85px;
+  float: left;
+}
+
+.navbar-1 {
+  display: inline-block;
+  float: left;
+  width: 24%;
+  margin-right: 1%;
+  height: 85px;
+}
+
+.navbar-2 {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  height: 85px;
 }
 
 .arrow-left {
-  position: absolute;
-  left: 2.76%;
-  right: 88.42%;
-  top: 31.8%;
-  bottom: 26.74%;
+  width: 20px;
+  display: inline-block !important;
 }
 
 .fa-chevron-left {
   font-size: 24px;
+  width: 19px;
   color: #007AFF;
+  display: inline-block;
+}
+
+.back-button {
+  width: 100%;
+  height: 24px;
+  margin-top: 35.5px;
+  margin-bottom: 25.5px;
+  display: inline-block !important;
 }
 
 .fas {
   font-size: 24px;
+  display: inline-block;
 }
 
 .map-text {
-  position: absolute;
-  left: 9%;
-  right: 66.11%;
-  top: 27%;
-  bottom: 25%;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 22px;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -0.0241176em;
   color: #007AFF;
+  display: inline-block !important;
+
 }
 
 .back-button:hover {
+  cursor: pointer;
   opacity: .6;
 }
 
 .selected-stop {
-  position: absolute;
-  width: 176px;
+  display: inline-block;
+  width: 100%;
   height: 22px;
-  left: calc(50% - 176px/2 - 1.5px);
-  top: 22%;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 22px;
   font-size: 17px;
   font-weight: 600;
-  text-align: center;
   letter-spacing: -0.0241176em;
   color: #000000;
+
+  height: 22px;
+  margin-top: 30px;
+  display: inline-block !important;
+
 }
 
 .bus-counter {
@@ -180,32 +228,32 @@ h3 {
 }
 
 .incoming-buses {
-  position: absolute;
-  width: 165px;
+  display: inline-block;
+  width: 100%;
   height: 13px;
-  left: 109px;
-  top: 65%;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 13px;
   font-size: 11px;
   letter-spacing: 0.00636364em;
   color: #000000;
+
+  height: 13px;
+  margin-bottom: 20px;
+  display: inline-block !important;
 }
 
 .bus-list-container {
-  margin: 80px auto;
-  position: absolute;
+  display: inline-block;
+  float: left !important;
   width: 375px;
   height: auto;
   background: white;
 }
 
 .bus-listing {
-  position: relative;
   display: inline-block;
   width: 375px;
   height: 78px;
-  left: 0px;
 }
 
 .bus-listing:hover {
@@ -213,18 +261,24 @@ h3 {
   cursor: pointer;
 }
 
+.bus-box-container {
+  width: 62px;
+  height: 78px;
+  margin-left: 14px;
+  display: inline-block;
+  float: left;
+}
+
 .bus-box {
-  position: absolute;
   width: 62px;
   height: 62px;
-  left: 15px;
-  top: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-radius: 13px;
   background: #EFEFF4;
 }
 
 .bus-number {
-  position: absolute;
   height: 62px;
   width: 62px;
   font-family: "San Francisco Display Thin";
@@ -236,17 +290,20 @@ h3 {
 }
 
 .destination-marker {
-  position: absolute;
   color: #564343;
   opacity: .75;
   width: 20px;
   height: 20px;
   left: 109px;
-  top: 25px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+  margin-left: 33px;
+  margin-right: 14px;
+  display: inline-block;
+  float: left;
 }
 
 .direction-marker {
-  position: absolute;
   color: #564343;
   font-size: 38px;
   font-family: "San Francisco Display Bold";
@@ -255,15 +312,20 @@ h3 {
   line-height: 38px;
   height: 38px;
   left: 101px;
-  top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  float: left;
+  margin-left: 24px;
+  margin-right: 5px;
 }
 
 .destination-text {
-  position: absolute;
   width: 144px;
   height: 22px;
   left: 140px;
-  top: 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
   font-family: "San Francisco Display Thin";
   font-weight: 600 !important;
   font-style: normal;
@@ -272,18 +334,19 @@ h3 {
   font-size: 22px;
   letter-spacing: -0.0241176em;
   color: #000000;
+  display: inline-block;
+  float: left;
 }
 
 .destination-small-text {
   font-size: 18px;
+  display: inline-block;
+  float: left;
 }
 
 .time-text {
-  position: absolute;
-  left: 80.07%;
-  right: 2.73%;
-  top: 32px;
-  bottom: 83.06%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: normal;
   font-weight: 600;
@@ -291,14 +354,14 @@ h3 {
   text-align: center;
   letter-spacing: -0.02em;
   color: black;
+  display: inline-block;
+  float: right;
+  margin-right: 14px;
 }
 
 .time-text-low {
-  position: absolute;
-  left: 80.07%;
-  right: 2.73%;
-  top: 32px;
-  bottom: 83.06%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: normal;
   font-weight: 600;
@@ -306,6 +369,9 @@ h3 {
   text-align: center;
   letter-spacing: -0.02em;
   color: #B82121;
+  display: inline-block;
+  float: right;
+  margin-right: 14px;
 }
 
 .time-icon {
@@ -338,14 +404,15 @@ h3 {
 }
 
 .popup-box {
-  top: 16px;
-  left: 16px;
+  display: inline-block;
+  margin-top: 16px;
 }
 
 .popup-destination {
-  position: absolute;
-  left: 94px;
-  top: 20px;
+  float: left;
+  display: inline-block;
+  margin-left: 16px;
+  margin-top: 20px;
   width: 222px;
   height: 24px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -359,9 +426,10 @@ h3 {
 }
 
 .popup-subtext {
-  position: absolute;
-  left: 94px;
-  top: 50px;
+  float: left;
+  display: inline-block;
+  margin-left: 16px;
+  margin-top: 5px;
   width: 222px;
   height: 18px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -373,29 +441,31 @@ h3 {
 }
 
 .close-icon {
-  position: absolute;
-  top: 16px;
-  right: 19px;
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 16px;
   color: #666666;
   opacity: .5;
   cursor: pointer;
 }
 
 .go-button {
-  position: absolute;
+  float: left;
+  display: inline-block;
   width: 345px;
   height: 50px;
-  top: 102px;
-  left: 15px;
+  margin-top: 32px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 8px;
   background-color: #007AFF;
 }
 
 .go-button-main-text {
-  position: absolute;
-  top: 7px;
-  left: 14px;
-  width: 317px;
+  float: left;
+  display: inline-block;
+  margin-top: 7px;
+  width: 345px;
   height: 18px;
   line-height: 18px;
   font-family: "San Francisco Display Semibold";
@@ -405,10 +475,9 @@ h3 {
 }
 
 .go-button-sub-text {
-  position: absolute;
-  top: 24px;
-  left: 14px;
-  width: 317px;
+  float: left;
+  display: inline-block;
+  width: 345px;
   height: 18px;
   line-height: 18px;
   font-family: "San Francisco Display Thin";

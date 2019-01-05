@@ -14,242 +14,252 @@
   <section class="container">
     <div class="iphone-frame">
       <div class="status-bar">
-        <div class="signal">
-          <img src="https://img.icons8.com/ios/12/000000/high-connection-filled.png">
-      </div>
+        <div class="status-left">
+          <div class="signal">
+            <i class="fas fa-signal"></i>
+          </div>
           <div class="gs-text">GS</div>
+        </div>
+        <div class="status-middle">
           <div class="time" id="currentTime"></div>
+        </div>
+        <div class="status-right">
           <div class="battery-text">100%</div>
           <div class="battery">
-            <img src="https://img.icons8.com/ios/18/000000/empty-battery-filled.png">
+            <i class="fas fa-battery-full fa-lg"></i>
+          </div>
+        </div>
       </div>
+      <div class="navbar-wrapper">
+        <div class="navbar-1">
+          <div class="back-button">
+            <div class="arrow-left">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="map-text">
+              <i class="fas fa-map-marked"></i>
+            </div>
           </div>
-          <div class="primary-screen">
-            <div class="navbar">
-              <div class="back-button">
-                <div class="arrow-left">
-                  <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="map-text">
-                  <i class="fas fa-map-marked"></i>
-                </div>
-              </div>
-              <div class="selected-stop">
-                Washington and State
-              </div>
-              <div class="incoming-buses">
-                <div class="bus-counter" id="bus-counter">NA</div> buses arriving at this location
-              </div>
-            </div>
-            <div class="bus-list-container" id="bus-list-div">
-              <div class="bus-listing" onclick="busListing1()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-1">
-                      60
-                    </div>
-                  </div>
-                </div>
-                <div class="direction-marker">
-                  Ⓔ
-                </div>
-                <div class="destination-text destination-small-text" id="bus-destination-1">
-                  Randolph/Harbor Dr
-                </div>
-                <div class="time-text-low" id="listing-1-timer">
-                  NA
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing2()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-2">
-                      124
-                    </div>
-                  </div>
-                </div>
-                <div class="direction-marker">
-                  Ⓔ
-                </div>
-                <div class="destination-text" id="bus-destination-2">
-                  Navy Pier
-                </div>
-                <div class="time-text" id="listing-2-timer">
-                  NA
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing3()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-3">
-                      151
-                    </div>
-                  </div>
-                </div>
-                <div class="direction-marker">
-                  Ⓝ
-                </div>
-                <div class="destination-text" id="bus-destination-3">
-                  Devon/Clark
-                </div>
-                <div class="time-text" id="listing-3-timer">
-                  NA
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing4()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-4">
-                      J14
-                    </div>
-                  </div>
-                </div>
-                <div class="direction-marker">
-                  Ⓢ
-                </div>
-                <div class="destination-text destination-small-text" id="bus-destination-4">
-                  103rd/Stony Island
-                </div>
-                <div class="time-text" id="listing-4-timer">
-                  7 min
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing5()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-5">
-                      124
-                    </div>
-                  </div>
-                </div>
-                <div class="direction-marker">
-                  Ⓢ
-                </div>
-                <div class="destination-text" id="bus-destination-5">
-                  Navy Pier
-                </div>
-                <div class="time-text" id="listing-5-timer">
-                  NA
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing6()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-6">
-                      6X
-                    </div>
-                  </div>
-                </div>
-                <div class="destination-marker">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="destination-text destination-small-text" id="bus-destination-6">
-                  Jackson Park Expr...
-                </div>
-                <div class="time-text" id="listing-6-timer">
-                  N/A
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing7()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-7">
-                      4
-                    </div>
-                  </div>
-                </div>
-                <div class="destination-marker">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="destination-text" id="bus-destination-7">
-                  Cottage Grove
-                </div>
-                <div class="time-text time-icon" id="listing-7-timer">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing8()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-8">
-                      20
-                    </div>
-                  </div>
-                </div>
-                <div class="destination-marker">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="destination-text" id="bus-destination-8">
-                  Madison
-                </div>
-                <div class="time-text time-icon" id="listing-8-timer">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <div class="bottom-border">
-                </div>
-              </div>
-              <div class="bus-listing" onclick="busListing9()">
-                <div class="bus-box-container">
-                  <div class="bus-box">
-                    <div class="bus-number" id="bus-number-9">
-                      157
-                    </div>
-                  </div>
-                </div>
-                <div class="destination-marker">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="destination-text" id="bus-destination-9">
-                  Streeterville/Taylor
-                </div>
-                <div class="time-text time-icon" id="listing-9-timer">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <div class="bottom-border">
+        </div>
+        <div class="navbar-2">
+          <div class="selected-stop">
+            Washington and State
+          </div>
+          <div class="incoming-buses">
+            <div class="bus-counter" id="bus-counter">NA</div> buses arriving at this location
+          </div>
+        </div>
+      </div>
+      <div class="primary-screen">
+        <div class="bus-list-container" id="bus-list-div">
+          <div class="bus-listing" onclick="busListing1()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-1">
+                  60
                 </div>
               </div>
             </div>
-            <div class="selected-route-container" id="selected-route-container">
-              <div class="bus-box-container">
-                <div class="bus-box popup-box">
-                  <div class="bus-number" id="modal-bus-number">
-                    NA
-                  </div>
+            <div class="direction-marker">
+              Ⓔ
+            </div>
+            <div class="destination-text destination-small-text" id="bus-destination-1">
+              Randolph/Harbor Dr
+            </div>
+            <div class="time-text-low" id="listing-1-timer">
+              NA
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing2()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-2">
+                  124
                 </div>
               </div>
-              <div class="popup-destination" id="modal-bus-destination">
-                Bus to NA
-              </div>
-              <div class="popup-subtext" id="modal-bus-arrivaltime">
-                Arriving in NA
-              </div>
-              <div class="close-icon" onclick="closeModal()">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="go-button">
-                <div class="go-button-main-text">
-                  Choose Bus
+            </div>
+            <div class="direction-marker">
+              Ⓔ
+            </div>
+            <div class="destination-text" id="bus-destination-2">
+              Navy Pier
+            </div>
+            <div class="time-text" id="listing-2-timer">
+              NA
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing3()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-3">
+                  151
                 </div>
-                <div class="go-button-sub-text">
-                  Get directions
+              </div>
+            </div>
+            <div class="direction-marker">
+              Ⓝ
+            </div>
+            <div class="destination-text" id="bus-destination-3">
+              Devon/Clark
+            </div>
+            <div class="time-text" id="listing-3-timer">
+              NA
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing4()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-4">
+                  J14
                 </div>
+              </div>
+            </div>
+            <div class="direction-marker">
+              Ⓢ
+            </div>
+            <div class="destination-text destination-small-text" id="bus-destination-4">
+              103rd/Stony Island
+            </div>
+            <div class="time-text" id="listing-4-timer">
+              7 min
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing5()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-5">
+                  124
+                </div>
+              </div>
+            </div>
+            <div class="direction-marker">
+              Ⓢ
+            </div>
+            <div class="destination-text" id="bus-destination-5">
+              Navy Pier
+            </div>
+            <div class="time-text" id="listing-5-timer">
+              NA
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing6()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-6">
+                  6X
+                </div>
+              </div>
+            </div>
+            <div class="destination-marker">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="destination-text destination-small-text" id="bus-destination-6">
+              Jackson Park Expr...
+            </div>
+            <div class="time-text" id="listing-6-timer">
+              N/A
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing7()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-7">
+                  4
+                </div>
+              </div>
+            </div>
+            <div class="destination-marker">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="destination-text" id="bus-destination-7">
+              Cottage Grove
+            </div>
+            <div class="time-text time-icon" id="listing-7-timer">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing8()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-8">
+                  20
+                </div>
+              </div>
+            </div>
+            <div class="destination-marker">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="destination-text" id="bus-destination-8">
+              Madison
+            </div>
+            <div class="time-text time-icon" id="listing-8-timer">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+          <div class="bus-listing" onclick="busListing9()">
+            <div class="bus-box-container">
+              <div class="bus-box">
+                <div class="bus-number" id="bus-number-9">
+                  157
+                </div>
+              </div>
+            </div>
+            <div class="destination-marker">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="destination-text" id="bus-destination-9">
+              Streeterville/Taylor
+            </div>
+            <div class="time-text time-icon" id="listing-9-timer">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="bottom-border">
+            </div>
+          </div>
+        </div>
+        <div class="selected-route-container" id="selected-route-container">
+          <div class="bus-box-container">
+            <div class="bus-box popup-box">
+              <div class="bus-number" id="modal-bus-number">
+                NA
               </div>
             </div>
           </div>
+          <div class="popup-destination" id="modal-bus-destination">
+            Bus to NA
+          </div>
+          <div class="popup-subtext" id="modal-bus-arrivaltime">
+            Arriving in NA
+          </div>
+          <div class="close-icon" onclick="closeModal()">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="go-button">
+            <div class="go-button-main-text">
+              Choose Bus
+            </div>
+            <div class="go-button-sub-text">
+              Get directions
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 </body>
 
